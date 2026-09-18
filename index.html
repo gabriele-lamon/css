@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
-      p {
+      [for] {
         color: red;
       }
 
-      #prova {
+      [for="email"] {
+        background-color: black;
+      }
+
+      [for^="p"] {
         background-color: green;
       }
 
-      .box {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: blue;
+      [for$="a"] {
+        background-color: orange;
       }
 
-      strong,
-      span {
-        font-family: "Courier New", Courier, monospace;
+      [for*="do"] {
+        font-style: bold;
       }
     </style>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
-    <h1 id="prova">Corso CSS</h1>
-    <p>bellissimo paragrafo</p>
-    <strong>sono del grassetto</strong>
-    <div class="box"></div>
-    <span>sono un testo normale</span>
+    <label for="email">email</label>
+    <label for="prova">prova</label>
+    <label for="povolone">provolone</label>
+    <label for="edoardo">edoardo</label>
+    <label for="dodo">dodo</label>
   </body>
 </html>
