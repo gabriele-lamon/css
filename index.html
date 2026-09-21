@@ -7,32 +7,78 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
-      [for] {
+      p {
         color: red;
       }
 
-      [for="email"] {
-        background-color: black;
+      li:hover {
+        color: aquamarine;
       }
 
-      [for^="p"] {
-        background-color: green;
+      p#pippo::first-line {
+        color: orange;
       }
 
-      [for$="a"] {
-        background-color: orange;
+      .classeA {
+        background-color: darkolivegreen;
       }
 
-      [for*="do"] {
-        font-style: bold;
+      .classeA.classeB {
+        background-color: blueviolet;
+      }
+
+      .classeA .classeB {
+        background-color: brown;
+      }
+
+      .classeA > .classeB {
+        background-color: burlywood;
+      }
+
+      .classeA + .classeB {
+        background-color: crimson;
+      }
+
+      [for] {
+        font-family: "Courier New", Courier, monospace;
       }
     </style>
   </head>
   <body>
-    <label for="email">email</label>
-    <label for="prova">prova</label>
-    <label for="povolone">provolone</label>
-    <label for="edoardo">edoardo</label>
-    <label for="dodo">dodo</label>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, itaque.
+    </p>
+
+    <ul>
+      <li>primo</li>
+      <li>secondo</li>
+      <li>terzo</li>
+    </ul>
+
+    <p id="pippo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem
+      mollitia voluptatibus culpa et maxime, velit itaque at ullam architecto.
+    </p>
+
+    <p class="classeA">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, recusandae?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <span class="classeA classeB">Quo, repellendus.</span> Tempora, sunt nam
+      labore nulla esse laudantium explicabo quae et.
+    </p>
+
+    <p class="classeA">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, repellendus.
+      Tempora, sunt nam labore nulla esse laudantium explicabo quae et.
+    </p>
+    <p class="classeB">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
+      impedit?
+    </p>
+
+    <label for="pippo">pippo</label>
   </body>
 </html>
