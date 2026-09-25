@@ -8,6 +8,8 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
         html,
         body {
             width: 100%;
@@ -15,38 +17,54 @@
             margin: 0;
         }
 
-        .box1 {
-            width: 100%;
-            background-color: red;
+        section {
+            background-color: black;
+            color: lightgray;
+            border-radius: 20px;
+            margin: 30px;
+            padding: 20px;
         }
 
-        .box1>p {
-            width: 50%;
-            font-size: 2rem;
-            background-color: orange;
+        h1 {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
         }
 
-        .box2 {
-            height: 100vh;
-            width: 50vw;
-            background-color: aqua;
-            font-size: 14px;
+        p {
+            line-height: 2rem;
+            word-spacing: 50px;
+            letter-spacing: 5px;
         }
 
-        .box2>p {
-            font-size: 2em;
+        li {
+            text-decoration: line-through;
+            color: #8a8787
         }
     </style>
 </head>
 
 <body>
-    <div class="box1">
-        <p>box1</p>
-    </div>
-
-    <div class="box2">
-        <p>box2</p>
-    </div>
+    <section class="box1">
+        <h1>Sono un titolo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, amet id ad possimus libero quidem. Eaque,
+            repellat. Officia est cum doloribus ipsa et ut voluptate, sunt perferendis vero facere quasi labore quam
+            debitis, deleniti error obcaecati beatae accusamus autem enim eos totam officiis excepturi. Placeat odit
+            quas veniam temporibus impedit numquam pariatur reiciendis quisquam tenetur et deserunt nam vitae ratione
+            dolores dolorum ad tempora odio amet, corrupti quos, eum, recusandae consequuntur labore. Maxime
+            consequuntur architecto culpa odio. Eveniet officia nulla, deserunt ipsum molestiae tenetur nisi tempore
+            earum natus, asperiores quod fugit reiciendis. Est tempore voluptatem nemo aspernatur nam temporibus ut
+            minima libero modi. Voluptatum adipisci doloribus nulla, perferendis natus exercitationem maiores autem
+            molestias expedita esse ex veritatis beatae quisquam doloremque?</p>
+        <ul>
+            <li>ciao 1</li>
+            <li>ciao 2</li>
+            <li>ciao 3</li>
+        </ul>
+    </section>
 </body>
 
 </html>
